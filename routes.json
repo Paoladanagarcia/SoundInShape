@@ -1,0 +1,347 @@
+{
+    "\/admin": {
+        "http_method": "GET",
+        "controller": "AdminDashBoardController",
+        "method": "index"
+    },
+    "\/admin\/users": {
+        "http_method": "GET",
+        "controller": "AdminDashBoardController",
+        "method": "manage_users"
+    },
+    "\/cgu": {
+        "http_method": "GET",
+        "controller": "CGUController",
+        "method": "cgu_show"
+    },
+    "\/admin\/cgu": {
+        "http_method": "GET",
+        "controller": "CGUController",
+        "method": "admin_cgu"
+    },
+    "\/cgu\/add": {
+        "http_method": "POST",
+        "controller": "CGUController",
+        "method": "post_cgu_add"
+    },
+    "\/cgu\/update": {
+        "http_method": "POST",
+        "controller": "CGUController",
+        "method": "post_cgu_update"
+    },
+    "\/cgu\/delete": {
+        "http_method": "POST",
+        "controller": "CGUController",
+        "method": "post_cgu_delete"
+    },
+    "\/admin\/clubs": {
+        "http_method": "GET",
+        "controller": "ClubController",
+        "method": "showOneOrManyClubs"
+    },
+    "\/admin\/clubs\/add": {
+        "http_method": "GET",
+        "controller": "ClubController",
+        "method": "addClub"
+    },
+    "\/admin\/clubs\/add-post": {
+        "http_method": "POST",
+        "controller": "ClubController",
+        "method": "postClub"
+    },
+    "\/post-manage-club": {
+        "http_method": "POST",
+        "controller": "ClubController",
+        "method": "post_manage_club"
+    },
+    "\/delete-club": {
+        "http_method": "POST",
+        "controller": "ClubController",
+        "method": "deleteClub"
+    },
+    "\/contact-form": {
+        "http_method": "GET",
+        "controller": "ContactFormController",
+        "method": "contact_form"
+    },
+    "\/post-contact-form": {
+        "http_method": "POST",
+        "controller": "ContactFormController",
+        "method": "post_contact_form"
+    },
+    "\/faq": {
+        "http_method": "GET",
+        "controller": "FAQController",
+        "method": "faq_show"
+    },
+    "\/admin\/faq": {
+        "http_method": "GET",
+        "controller": "FAQController",
+        "method": "admin_faq"
+    },
+    "\/faq\/add": {
+        "http_method": "POST",
+        "controller": "FAQController",
+        "method": "post_faq_add"
+    },
+    "\/faq\/update": {
+        "http_method": "POST",
+        "controller": "FAQController",
+        "method": "post_faq_update"
+    },
+    "\/faq\/delete": {
+        "http_method": "POST",
+        "controller": "FAQController",
+        "method": "post_faq_delete"
+    },
+    "\/forum": {
+        "http_method": "GET",
+        "controller": "ForumController",
+        "method": "index"
+    },
+    "\/admin\/forum-topics": {
+        "http_method": "GET",
+        "controller": "ForumController",
+        "method": "admin_view_topics"
+    },
+    "\/admin\/forum-messages": {
+        "http_method": "GET",
+        "controller": "ForumController",
+        "method": "admin_view_messages"
+    },
+    "\/manage-forum-topic": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "admin_manage_topic_post"
+    },
+    "\/post-forum-topic": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "post_forum_topic"
+    },
+    "\/post-forum-message": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "post_forum_message"
+    },
+    "\/approve-topic": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "approve_topic"
+    },
+    "\/delete-topic": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "delete_topic"
+    },
+    "\/edit-message": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "admin_edit_message"
+    },
+    "\/delete-message": {
+        "http_method": "POST",
+        "controller": "ForumController",
+        "method": "admin_delete_message"
+    },
+    "\/set-lang-fr": {
+        "http_method": "GET",
+        "controller": "LangController",
+        "method": "set_lang_fr"
+    },
+    "\/set-lang-en": {
+        "http_method": "GET",
+        "controller": "LangController",
+        "method": "set_lang_en"
+    },
+    "\/legal": {
+        "http_method": "GET",
+        "controller": "LegalController",
+        "method": "legal_show"
+    },
+    "\/admin\/legal": {
+        "http_method": "GET",
+        "controller": "LegalController",
+        "method": "admin_legal"
+    },
+    "\/legal\/add": {
+        "http_method": "POST",
+        "controller": "LegalController",
+        "method": "post_legal_add"
+    },
+    "\/legal\/update": {
+        "http_method": "POST",
+        "controller": "LegalController",
+        "method": "post_legal_update"
+    },
+    "\/legal\/delete": {
+        "http_method": "POST",
+        "controller": "LegalController",
+        "method": "post_legal_delete"
+    },
+    "\/reset-password-mail": {
+        "http_method": "GET",
+        "controller": "ResetPasswordController",
+        "method": "display_reset_password_mail_form"
+    },
+    "\/post-reset-password-mail": {
+        "http_method": "POST",
+        "controller": "ResetPasswordController",
+        "method": "create_reset_token"
+    },
+    "\/reset-password": {
+        "http_method": "GET",
+        "controller": "ResetPasswordController",
+        "method": "display_reset_password_form"
+    },
+    "\/post-reset-password": {
+        "http_method": "POST",
+        "controller": "ResetPasswordController",
+        "method": "reset_password"
+    },
+    "\/search": {
+        "http_method": "GET",
+        "controller": "SearchController",
+        "method": "show_search"
+    },
+    "\/searchresult": {
+        "http_method": "POST",
+        "controller": "SearchController",
+        "method": "show_searchresult"
+    },
+    "\/admin\/sensors": {
+        "http_method": "GET",
+        "controller": "SensorController",
+        "method": "admin_view_sensors"
+    },
+    "\/sessions": {
+        "http_method": "GET",
+        "controller": "SessionController",
+        "method": "sessions"
+    },
+    "\/session-suggestion": {
+        "http_method": "GET",
+        "controller": "SessionController",
+        "method": "sessionSuggestion"
+    },
+    "\/admin\/sessions": {
+        "http_method": "GET",
+        "controller": "SessionController",
+        "method": "admin_view_sessions"
+    },
+    "\/admin\/session\/add": {
+        "http_method": "GET",
+        "controller": "SessionController",
+        "method": "admin_add_session"
+    },
+    "\/post-manage-session": {
+        "http_method": "POST",
+        "controller": "SessionController",
+        "method": "admin_post_manage_session"
+    },
+    "\/post-add-session": {
+        "http_method": "POST",
+        "controller": "SessionController",
+        "method": "post_add_session"
+    },
+    "\/delete-session": {
+        "http_method": "POST",
+        "controller": "SessionController",
+        "method": "admin_delete_session"
+    },
+    "\/": {
+        "http_method": "GET",
+        "controller": "StaticController",
+        "method": "showHome"
+    },
+    "\/stats\/get": {
+        "http_method": "GET",
+        "controller": "StatsController",
+        "method": "get_stats"
+    },
+    "\/update-stats-timepoint": {
+        "http_method": "POST",
+        "controller": "StatsController",
+        "method": "update_stats_timepoint"
+    },
+    "\/update-stats-level": {
+        "http_method": "POST",
+        "controller": "StatsController",
+        "method": "update_stats_level"
+    },
+    "\/register": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "display_register_user_form"
+    },
+    "\/register-captcha": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "generate_register_captcha"
+    },
+    "\/login": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "display_login_form"
+    },
+    "\/logout": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "logout_user"
+    },
+    "\/my-sound-profile": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "display_sound_profile"
+    },
+    "\/verify-mail": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "verify_mail"
+    },
+    "\/get-session-suggestion": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "get_session_suggestion"
+    },
+    "\/post-register-user": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "post_register_user"
+    },
+    "\/post-login": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "post_login"
+    },
+    "\/edit-profile": {
+        "http_method": "GET",
+        "controller": "UserController",
+        "method": "edit_user"
+    },
+    "\/post-edit-profile": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "post_edit_user"
+    },
+    "\/confirm-user": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "confirm_user"
+    },
+    "\/delete-user": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "delete_user"
+    },
+    "\/post-manage-user": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "post_manage_user"
+    },
+    "\/post-update-user-pref-noise": {
+        "http_method": "POST",
+        "controller": "UserController",
+        "method": "post_update_pref_noise"
+    }
+}
