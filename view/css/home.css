@@ -1,0 +1,158 @@
+main * {
+	box-sizing: border-box;
+}
+
+main .slideshow-container {
+	position: relative;
+	margin: auto;
+}
+
+main .mySlides {
+	display: none;
+	z-index: 300;
+}
+
+/* Next & previous buttons */
+main .prev,
+main .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+main .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+main .prev:hover,
+main .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+main .text {
+	color: #f2f2f2;
+	font-size: 13px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/5 etc) */
+main .numbertext {
+	color: #f2f2f2;
+	font-size: 10px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots */
+main .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 1px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+main .active,
+main .dot:hover {
+	background-color: #717171;
+}
+
+main .overlay1 h1 {
+	font-size: 70px;
+	text-align: center;
+	color: rgb(255, 120, 10);
+	margin: 1em 0;
+}
+
+main .overlay1 h2 {
+	font-size: 30px;
+	text-align: center;
+	color: rgb(255, 120, 10);
+	margin: 1em 0;
+}
+
+main h3 {
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+
+main p {
+	font-size: 17px;
+	text-align: center;
+	color: white;
+}
+
+main .overlay1 {
+	position: absolute;
+	left: 0;
+	top: 170px;
+	width: 100%;
+	height: 350px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 3px;
+}
+
+main .overlay2 {
+	background-color: rgba(255, 155, 80, 0.8);
+	padding: 3px;
+	border-radius: 8px;
+	color: white;
+	padding: 3px;
+	top: 550px;
+	position: absolute;
+	width: 30%;
+	left: 35%;
+}
+
+main .overlay3 {
+	background-color: rgba(255, 155, 80, 0.8);
+	border-radius: 8px;
+	width: 50%;
+	color: white;
+	padding: 3px;
+	top: 750px;
+	position: absolute;
+	width: 60%;
+	left: 20%;
+}
+
+main .custom-select {
+	background-color: rgba(255, 129, 0, 0.5); /* Orange transparent */
+	color: whitesmoke;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: inherit;
+}
+
+main #decrease,
+main #increase {
+	background-color: rgba(255, 129, 0, 0.5);
+	color: white;
+	border: 1px solid whitesmoke;
+	border-radius: 14px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin: 0 5px; /* Marge entre les boutons */
+}

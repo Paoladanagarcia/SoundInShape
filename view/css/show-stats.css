@@ -1,0 +1,11 @@
+.container {
+	max-width: 90%;
+}
+
+#btn-new-stats-dialog {
+	/* at the bottom right */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+}

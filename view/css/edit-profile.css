@@ -1,0 +1,15 @@
+form {
+	margin: 0 auto;
+	width: 40%;
+	/* border: 1px solid red; */
+	border-radius: 5px;
+	border: 2px solid darkorange;
+	padding: 1em;
+}
+
+label {
+	display: block;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+}

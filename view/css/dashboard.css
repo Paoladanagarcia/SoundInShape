@@ -1,0 +1,91 @@
+body {
+	color: black;
+	/*color: orchid;*/
+}
+
+section {
+	padding: 10px;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	margin: 10px;
+}
+
+section div,
+aside div {
+	padding: 10px;
+}
+
+aside p {
+	padding-left: 20px;
+}
+
+section#to_confirm .flex-container {
+	padding: 10px;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section#to_confirm .flex-container div {
+	margin: 0 10px;
+	flex: 1;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+section#main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section#main aside {
+	flex: 1;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	margin: 0 10px;
+}
+
+section#main div {
+	flex: 5;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	margin: 0 10px;
+}
+
+input[type="submit"] {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 5px 10px;
+	cursor: pointer;
+	color: inherit;
+	font-family: inherit;
+}
+
+section#to_confirm td {
+	padding: 5px;
+	border-left: 1px solid #ccc;
+}
+
+div#grid-stats {
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+div#grid-stats div {
+	margin: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+th,
+td {
+	text-align: center;
+}

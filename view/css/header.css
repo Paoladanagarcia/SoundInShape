@@ -1,0 +1,110 @@
+header#nav-header {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/* border: 1px solid #000; */
+	background-color: whitesmoke;
+}
+
+.header-left > div,
+.header-right > div {
+	position: relative; /* Add this */
+}
+
+header#nav-header #header-logo {
+	margin-right: 1em;
+}
+
+header#nav-header > .header-left {
+	flex: 5;
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header#nav-header a {
+	transition: color 0.3s ease;
+	text-decoration: none;
+}
+
+header#nav-header a:not(.drop-content a) {
+	color: orange;
+}
+
+header#nav-header a:not(.drop-content a):hover {
+	color: black;
+}
+
+header#nav-header > .header-right {
+	flex: 1;
+	/* border: 1px solid green; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: relative; /* Add this */
+	margin-left: 1em;
+	width: 100%;
+}
+
+header#nav-header .header-left > div > .drop-content,
+header#nav-header .header-right > div > .drop-content {
+	position: absolute;
+	width: max-content;
+	left: 25%;
+	transform: translateX(-25%);
+	top: 100%;
+	display: flex;
+	flex-direction: column;
+	visibility: hidden;
+	z-index: 1; /* Add this */
+}
+
+header#nav-header .header-left > div > .drop-trigger:hover + .drop-content,
+header#nav-header .header-right > div > .drop-trigger:hover + .drop-content {
+	visibility: visible;
+}
+
+header#nav-header .header-left > div:hover > .drop-content,
+header#nav-header .header-right > div:hover > .drop-content {
+	visibility: visible;
+}
+
+header#nav-header .header-right > div > .drop-content > a,
+header#nav-header .header-left > div > .drop-content > a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	background-color: #ddd;
+	/* border: 1px solid yellowgreen; */
+	color: #000; /* Set a color for the <a> elements */
+}
+
+header#nav-header .header-right > div > .drop-content > a:hover,
+header#nav-header .header-left > div > .drop-content > a:hover {
+	color: orange; /* Set a color for the <a> elements */
+}
+
+/* Styles for screens that are 600px or less */
+@media screen and (max-width: 600px) {
+	header#nav-header {
+		flex-direction: column;
+	}
+
+	header#nav-header > .header-left,
+	header#nav-header > .header-right {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	header#nav-header .header-left > div > .drop-content,
+	header#nav-header .header-right > div > .drop-content {
+		left: 0;
+		transform: none;
+	}
+}

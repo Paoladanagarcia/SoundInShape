@@ -1,0 +1,138 @@
+body {
+	font-family: Verdana;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 200%;
+	color: #ed6d30;
+	margin: 3em 0;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	padding: 50px;
+}
+
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	transition: border-color 0.3s;
+	font-size: inherit;
+	border: 2px solid dimgray;
+	outline: none !important;
+}
+
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
+	border: 2px solid #ffa500;
+	animation: glow 1000s linear;
+	outline: none !important;
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 5px 2px #ffa500;
+	}
+}
+
+table {
+	width: 70%;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+table thead {
+	background-color: #f2f2f2;
+}
+
+table th,
+td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	color: black;
+}
+
+table td {
+	cursor: pointer;
+}
+
+table tr:hover {
+	background-color: #e5e5e5;
+	transition: background-color 0.5s;
+}
+
+.bb {
+	background: #f5f5f5;
+	border-collapse: collapse;
+	margin: auto;
+	text-align: left;
+	width: 70%;
+}
+
+.bb th {
+	background: linear-gradient(#777, #444);
+	border: 1px solid #555;
+	color: #fff;
+	padding: 10px 15px;
+}
+
+.bb td {
+	background: linear-gradient(to left, #a5a5a5, #d8d8d8);
+	border: 1px solid #fff;
+	padding: 10px 15px;
+	color: #000;
+	position: relative;
+	transition: all 300ms;
+}
+
+.bb tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #838383;
+}
+
+.bb tr:hover td {
+	color: #000000;
+	text-shadow: 0 0 0 #ececec;
+}
+
+.BigButton {
+	background-color: #ffa500;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	border: #ed6d30;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 120%;
+	display: block;
+}
+
+.BigButton:disabled {
+	background-color: dimgray;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	border: #ed6d30;
+	border-radius: 10px;
+	cursor: not-allowed;
+	font-size: 120%;
+	display: block;
+}
+
+.BigButton:not(:disabled):hover {
+	transition: box-shadow 0.3s;
+	box-shadow: 0 0 10px #ffa500;
+	background-color: #ed6d30;
+	color: white;
+}

@@ -1,0 +1,96 @@
+.cadre {
+	background-color: whitesmoke;
+	padding: 20px;
+	border-width: 3px;
+	border-color: #ffa500;
+	border-style: solid;
+	width: fit-content;
+
+	margin: auto;
+	gap: 1px;
+
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+form {
+	border-top: 5px solid orange;
+	margin: 0; /* Réinitialiser la marge du formulaire */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	text-align: center;
+	display: flex;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+label i {
+	margin-top: 5px;
+	align-self: left;
+	vertical-align: bottom;
+}
+
+form > div {
+	width: 100%;
+	margin: 0.5em;
+}
+
+input {
+	width: 50%;
+	display: block;
+}
+
+.BigButton {
+	margin-top: 2em;
+}
+
+/* .checkboxchoix {
+	flex-direction: column;
+	align-items: center;
+}
+.checkboxchoix label {
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.checkboxchoix input[type='checkbox'] {
+	margin-right: 5px;
+}
+.condition_utilisation {
+	flex-direction: row;
+	align-items: center;
+}
+.condition_utilisation label {
+	flex-direction: row;
+	align-items: center;
+}
+.choix_newsletter {
+	flex-direction: row;
+	align-items: center;
+}
+.choix_newsletter label {
+	flex-direction: row;
+	align-items: center;
+}
+
+.choix_pratiquer_sport, .choix_newsletter {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+} */
+
+@media screen and (max-width: 800px) {
+	.cadre {
+		width: 90%;
+	}
+}

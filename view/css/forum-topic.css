@@ -1,0 +1,18 @@
+main {
+	width: 80%;
+	margin: auto;
+}
+
+.msg-list {
+	list-style: none;
+}
+
+.forum-msg {
+	border-left: 2px solid #ed6d30;
+	padding-left: 1em;
+	margin-bottom: 1em;
+}
+
+#form-forum-msg {
+	margin-top: 3em;
+}
