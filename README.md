@@ -1,7 +1,6 @@
 # APP G5C - SoundInShape
 
 Année 2023-2024
-Lien vers le tutoriel vidéo : https://drive.google.com/file/d/1asxPbreGVFyFmQhoWIJHzJEhgW9Gh8LS/view?usp=sharing
 
 # Lancer le projet
 
