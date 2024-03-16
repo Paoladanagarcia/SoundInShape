@@ -16,7 +16,7 @@ Les logins sont
 Créer la BDD comme décrit juste au-dessus en éxécutant le code SQL mentionné ci-dessus dans phpMyAdmin.
 Il faudra une base de données `app`. Cette base contiendra la table `users`.
 
--   Cloner le repo : `git clone james https://github.com/LIFRANCKY/SoundInShape` dans un espace de travail PHP (`htdocs`, `www`, etc...).
+-   Cloner le repo : `git clone james https://github.com/Paoladanagarcia/SoundInShape` dans un espace de travail PHP (`htdocs`, `www`, etc...).
     Lancer le projet : `http://localhost/soundinshape/`;
 
 # Serveur mail SMTP
